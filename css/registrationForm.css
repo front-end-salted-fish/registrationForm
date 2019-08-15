@@ -1,0 +1,31 @@
+body {
+  margin-top: 200px;
+}
+body .outer-mask {
+  margin-top: 200px;
+}
+body .outer-mask .formBox {
+  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  height: 950px;
+  border: 1px solid #12d3cf;
+  padding: 50px;
+  background: linear-gradient(45deg, #c7f0db, transparent);
+  border-radius: 30px;
+}
+body .outer-mask .formBox #close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+}
+body .outer-mask .formBox .btn1 {
+  margin: 10px;
+}
+body .outer-mask .formBox .bg {
+  text-align: center;
+}

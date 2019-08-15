@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>registrationForm</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/registrationForm.css">
+</head>
+
+<body>
+    <div class="container-fluid outer-mask" id="tableid">
+        <div class="formBox">
+            <div class="bgImg2" id="close"><img src="./img/lvcha.svg" alt=""></div>
+            <form>
+                <div class="form-group">
+                    <label>名字</label>
+                    <input type="text" class="form-control form" id="userName"><span id="userNameSpan"
+                        class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <select class="form-control" id="sex">
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>学院</label>
+                    <input type="text" class="form-control form" placeholder="计算机学院" id="ademicInstitution"><span
+                        id="ademicInstitutionSpan" class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>专业班级</label>
+                    <input type="text" class="form-control form" placeholder="网络工程3班" id="class"><span id="classSpan"
+                        class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>宿舍</label>
+                    <input type="text" class="form-control form" placeholder="东三408" id="dormitory"><span
+                        id="dormitorySpan" class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>电话号码</label>
+                    <input type="text" class="form-control form" id="phone"><span id="phoneSpan"
+                        class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>学号</label>
+                    <input type="text" class="form-control form" id="studentNumber"><span id="studentNumberSpan"
+                        class="formSpan"></span>
+                </div>
+                <div class="form-group">
+                    <label>部门</label>
+                    <select class="form-control" id="departmentName">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>个人介绍</label>
+                    <textarea class="form-control form" rows="3" style="resize: none"
+                        onfocus="if(this.value=='一百字以上'){this.value='';}"
+                        onblur="if(this.value==''){this.value='一百字以上';}" id="textArea">一百字以上</textarea>
+                    <span id="textAreaSpan"></span>
+                </div>
+                <div class="form-group bg">
+                    <button type="button" class="btn btn-default btn1" id="btn">Submit</button>
+                    <button type="button" class="btn btn-default btn1" id="excell"
+                        onclick="method5('tableid')">Print</button>
+                </div>
+            </form>
+        </div>
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="./js/registrationForm.js"></script>
+    </div>
+</body>
+
+</html>
